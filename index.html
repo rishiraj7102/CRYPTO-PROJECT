@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartInsights</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="logic/index.js"></script>
+</head>
+
+<body>
+    <nav class="background">
+
+        <h1>CRYPTOCURRENCY PRICE PRIDICTION</h1>
+
+    </nav>
+    <section class="firstsection">
+        <div class="card">
+            <img src="img/bitcoinLogo.png" alt="BITCOIN" style="width:100%">
+            <h1>BITCOIN</h1>
+            <p class="price" id="bitINR">DUMMY $19.99</p>
+            <p class="price" id="bitUSD">DUMMY $19.99</p>
+            <p>introductory text</p>
+            <p><button>SHOW MARKET TREND</button></p>
+        </div>
+        <div class="card">
+            <img src="img/dogeLogo.png" alt="DOGECOIN" style="width:100%">
+            <h1>DOGECOIN</h1>
+            <p class="price" id="dogeINR">DUMMY $19.99</p>
+            <p class="price" id="dogeUSD">DUMMY $19.99</p>
+            <p>introductory text</p>
+            <p><button>SHOW MARKET TREND</button></p>
+        </div>
+        <div class="card">
+            <img src="img/etheriumLogo.png" alt="ETHERIUM" style="width:100%">
+            <h1>ETHERIUM</h1>
+            <p class="price" id="etheriumINR">DUMMY $19.99</p>
+            <p class="price" id="etheriumUSD">DUMMY $19.99</p>
+            <p>introductory text</p>
+            <p><button>SHOW MARKET TREND</button></p>
+        </div>
+        <div class="card">
+            <img src="img/binanceLogo.png" alt="BINANCE" style="width:100%">
+            <h1>BINANCE</h1>
+            <p class="price" id="binanceINR">DUMMY $19.99</p>
+            <p class="price" id="binanceUSD">DUMMY $19.99</p>
+            <p>introductory text</p>
+            <p><button>SHOW MARKET TREND</button></p>
+        </div>
+    </section>
+    <section id="graph">
+        <!-- <img id="bit-graph" src="img/graph.jpeg" alt="">
+        <img id="doge-graph" src="img/graph.jpeg" alt="">
+        <img id="etherium-graph" src="img/graph.jpeg" alt=""> -->
+        <img id="binance-graph" src="img/graph.jpeg" alt="">
+    </section>
+    <hr class="Thick-hr">
+    <section id="allCoins">
+        <div>
+            <input type="text" name="coinCode" id="coinCode" placeholder="Cryptocurrency Code">
+        </div>
+        <div>
+            <button class="button" onclick="getrealtimepriceRS()">INR</button>
+            <button class="button" onclick="getrealtimepriceUSD()">USD</button>
+        </div>
+        <div id='realtimeprice'>  <h2></h2> </div>
+    </section>
+    <hr class="Thick-hr">
+    <footer class="background">
+        <h2>DEVELOPERS</h2>
+
+    </footer>
+</body>
+
+</html>
